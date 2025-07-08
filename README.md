@@ -25,7 +25,7 @@ Esse site foi desenvolvido como parte da atividade prática da disciplina de Fun
 
 ## Link do site
 
-🔗 [https://seu-usuario.github.io/portfolio-ana-nunes](https://aarosanunes.github.io/portfolio-ana-nunes)
+🔗 [https://aarosanunes.github.io/portfolio-ana-nunes](https://aarosanunes.github.io/portfolio-ana-nunes)
 
 ---
 
