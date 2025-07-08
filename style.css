@@ -1,0 +1,580 @@
+/* 
+   Reset básico e estilos globais
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* evita scroll horizontal indesejado */
+}
+
+/*
+   Header comum
+*/
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #7f5af0;
+  outline: none;
+}
+
+/* ===========================
+   Footer comum
+=========================== */
+footer {
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  user-select: none;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   Main comum (base)
+=========================== */
+main {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+  margin: 2.5rem auto 3rem;
+  padding: 1.5rem 2rem;
+  max-width: 700px;
+  width: 90vw; /* largura fluida */
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* ===========================
+   Página: Sobre Mim
+=========================== */
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo e fonte */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #2a254b;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgb(42 37 75 / 0.25);
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #7f5af0;
+  background-color: #efeefe;
+  outline: none;
+  box-shadow: 0 0 8px #7f5af0aa;
+}
+
+/* Main */
+main {
+  flex: 1;
+  background: #fff;
+  max-width: 700px;
+  margin: 3rem auto 4rem;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(127 90 240 / 0.15);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* Títulos das seções */
+main h2 {
+  font-weight: 900;
+  color: #2a254b;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.04em;
+  border-bottom: 3px solid #7f5af0;
+  padding-bottom: 0.4rem;
+  user-select: none;
+}
+
+/* Listas */
+main ul {
+  list-style: none;
+  margin-bottom: 2.4rem;
+  padding-left: 0;
+}
+
+main ul li {
+  background: #f4f4ff;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #444;
+  box-shadow: 0 3px 8px rgb(127 90 240 / 0.1);
+  word-wrap: break-word;
+  transition: background-color 0.3s ease;
+}
+
+main ul li strong {
+  color: #7f5af0;
+}
+
+/* Hover para itens da lista */
+main ul li:hover,
+main ul li:focus-within {
+  background-color: #e8e3ff;
+  box-shadow: 0 6px 16px rgb(127 90 240 / 0.3);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #2a254b;
+  color: #ccc;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  user-select: none;
+  box-shadow: 0 -4px 10px rgb(42 37 75 / 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 1.2rem;
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  main {
+    margin: 2rem 1rem 3rem;
+    padding: 1.5rem 1.8rem;
+    width: 95vw;
+    border-radius: 10px;
+  }
+
+  main h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  main ul li {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* 
+   Página: Formação
+ */
+.formacao main h2 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  border-bottom: 2px solid #7f5af0;
+  padding-bottom: 0.4rem;
+}
+
+.formacao main ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.formacao main ul li {
+  background: #f4f4ff;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  color: #444;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.07);
+  word-wrap: break-word;
+}
+
+.formacao main ul li strong {
+  color: #7f5af0;
+}
+
+/* 
+   Página: Portfólio
+ */
+.portfolio main h2 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  border-bottom: 3px solid #7f5af0;
+  padding-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.portfolio main h2::before {
+  content: "📁";
+  font-size: 1.8rem;
+}
+
+.portfolio main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.portfolio main ul li {
+  background: #f9f9ff;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  color: #444;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  word-wrap: break-word;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.portfolio main ul li:hover,
+.portfolio main ul li:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgb(127 90 240 / 0.35);
+  background: #f0eaff;
+}
+
+.portfolio main ul li a {
+  color: #5c3ac7;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  flex-grow: 1;
+}
+
+.portfolio main ul li a:hover,
+.portfolio main ul li a:focus {
+  color: #7f5af0;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Emoji decorativo à esquerda dos itens */
+.portfolio main ul li::before {
+  content: "🚀";
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+  flex-shrink: 0;
+  color: #7f5af0;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Ajusta padding para não ficar atrás do emoji */
+.portfolio main ul li a {
+  padding-left: 2.4rem;
+}
+
+/* 
+   Página: Contato
+*/
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo e fonte */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #2a254b;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgb(42 37 75 / 0.25);
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #7f5af0;
+  background-color: #efeefe;
+  outline: none;
+  box-shadow: 0 0 8px #7f5af0aa;
+}
+
+/* Main */
+main {
+  flex: 1;
+  background: #fff;
+  max-width: 700px;
+  margin: 3rem auto 4rem;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(127 90 240 / 0.15);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* Título do formulário */
+main h2 {
+  text-align: center;
+  font-weight: 900;
+  color: #2a254b;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+main h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #7f5af0;
+  margin: 0.6rem auto 0;
+  border-radius: 3px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+label {
+  font-weight: 700;
+  color: #555;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+/* Inputs e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.9rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  background-color: #fafafa;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #7f5af0;
+  outline: none;
+  box-shadow: 0 0 8px 2px #7f5af0aa;
+  background-color: #fff;
+}
+
+textarea {
+  min-height: 140px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Botão enviar */
+button[type="submit"] {
+  max-width: 240px;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(135deg, #7f5af0, #5e3fd3);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  align-self: flex-start;
+  box-shadow: 0 6px 20px rgb(127 90 240 / 0.5);
+  user-select: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: linear-gradient(135deg, #5e3fd3, #3d2c91);
+  box-shadow: 0 8px 28px rgb(94 63 211 / 0.7);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #2a254b;
+  color: #ccc;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  user-select: none;
+  box-shadow: 0 -4px 10px rgb(42 37 75 / 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 1.2rem;
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  main {
+    margin: 2rem 1rem 3rem;
+    padding: 1.5rem 1.8rem;
+    width: 95vw;
+    border-radius: 10px;
+  }
+
+  main h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  button[type="submit"] {
+    max-width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    align-self: center;
+  }
+}
+
